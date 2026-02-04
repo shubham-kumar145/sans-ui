@@ -4,20 +4,20 @@ interface NextFont {
   variable: string;
 }
 
-declare module "cal-sans-ui/font" {
+declare module "@calcom/cal-sans-ui" {
   export const CalSansUI: NextFont;
   export const CalSansUINonVariable: NextFont;
   export const CalSansText: NextFont;
 }
 
-declare module "cal-sans-ui/font/ui" {
+declare module "@calcom/cal-sans-ui/ui" {
   export const CalSansUI: NextFont;
 }
 
-declare module "cal-sans-ui/font/ui-non-variable" {
+declare module "@calcom/cal-sans-ui/ui-non-variable" {
   export const CalSansUINonVariable: NextFont;
 }
 
-declare module "cal-sans-ui/font/text" {
+declare module "@calcom/cal-sans-ui/text" {
   export const CalSansText: NextFont;
 }

@@ -1,35 +1,35 @@
 {
-  "name": "cal-sans-ui",
-  "version": "1.0.1",
+  "name": "@calcom/cal-sans-ui",
+  "version": "1.0.2",
   "description": "Cal Sans UI and Cal Sans Text typefaces for Cal.com interfaces",
   "type": "module",
   "main": "./dist/font.js",
   "module": "./dist/font.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    "./font": {
+    ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/font.js",
       "default": "./dist/font.js"
     },
-    "./font/ui": {
+    "./ui": {
       "types": "./dist/index.d.ts",
       "import": "./dist/sans-ui.js",
       "default": "./dist/sans-ui.js"
     },
-    "./font/ui-non-variable": {
+    "./ui-non-variable": {
       "types": "./dist/index.d.ts",
       "import": "./dist/sans-ui-non-variable.js",
       "default": "./dist/sans-ui-non-variable.js"
     },
-    "./font/text": {
+    "./text": {
       "types": "./dist/index.d.ts",
       "import": "./dist/sans-text.js",
       "default": "./dist/sans-text.js"
     },
-    "./font/ui.css": "./dist/sans-ui.css",
-    "./font/ui-non-variable.css": "./dist/sans-ui-non-variable.css",
-    "./font/text.css": "./dist/sans-text.css"
+    "./ui.css": "./dist/sans-ui.css",
+    "./ui-non-variable.css": "./dist/sans-ui-non-variable.css",
+    "./text.css": "./dist/sans-text.css"
   },
   "files": [
     "dist",

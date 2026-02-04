@@ -1,11 +1,11 @@
-# cal-sans-ui
+# @calcom/cal-sans-ui
 
 Cal Sans UI and Cal Sans Text typefaces for [Cal.com](https://cal.com), as an npm package for Next.js and any app that can import CSS.
 
 ## Install
 
 ```bash
-npm i cal-sans-ui
+npm i @calcom/cal-sans-ui
 ```
 
 **Next.js:** peer dependency Next.js 13.2+
@@ -15,16 +15,16 @@ npm i cal-sans-ui
 **Next.js (App Router):**
 
 ```tsx
-import { CalSansUI } from "cal-sans-ui/font/ui";
-import { CalSansText } from "cal-sans-ui/font/text";
-// or: import { CalSansUI, CalSansText } from "cal-sans-ui/font";
+import { CalSansUI } from "@calcom/cal-sans-ui/ui";
+import { CalSansText } from "@calcom/cal-sans-ui/text";
+// or: import { CalSansUI, CalSansText } from "@calcom/cal-sans-ui";
 ```
 
 **Any other app (Vite, CRA, etc.):**
 
 ```tsx
-import "cal-sans-ui/font/ui.css";
-import "cal-sans-ui/font/text.css";
+import "@calcom/cal-sans-ui/ui.css";
+import "@calcom/cal-sans-ui/text.css";
 ```
 
 Then use `font-family: "Cal Sans UI"` or `font-family: "Cal Sans Text"` in your CSS.
@@ -34,8 +34,8 @@ Then use `font-family: "Cal Sans UI"` or `font-family: "Cal Sans Text"` in your 
 Next.js requires font loaders to be called at module scope, so you use the exported font objects directly:
 
 ```tsx
-import { CalSansUI } from "cal-sans-ui/font/ui";
-import { CalSansText } from "cal-sans-ui/font/text";
+import { CalSansUI } from "@calcom/cal-sans-ui/ui";
+import { CalSansText } from "@calcom/cal-sans-ui/text";
 
 export default function RootLayout({ children }) {
   return (
@@ -70,8 +70,8 @@ Import the CSS and use the font family names:
 
 ```ts
 // In your app entry (e.g. main.tsx, App.tsx)
-import "cal-sans-ui/font/ui.css";
-import "cal-sans-ui/font/text.css";
+import "@calcom/cal-sans-ui/ui.css";
+import "@calcom/cal-sans-ui/text.css";
 ```
 
 ```css
@@ -86,20 +86,20 @@ h1, h2 {
 For browsers that don’t support variable fonts, use the static UI CSS instead:
 
 ```ts
-import "cal-sans-ui/font/ui-non-variable.css";
+import "@calcom/cal-sans-ui/ui-non-variable.css";
 ```
 
 ## Exports
 
 | Import | Description |
 |--------|-------------|
-| `cal-sans-ui/font` | Next: `CalSansUI`, `CalSansUINonVariable`, `CalSansText` (all in one). |
-| `cal-sans-ui/font/ui` | Next: `CalSansUI` (variable). **Preferred.** |
-| `cal-sans-ui/font/ui-non-variable` | Next: `CalSansUINonVariable` (static UI). |
-| `cal-sans-ui/font/text` | Next: `CalSansText` (static). |
-| `cal-sans-ui/font/ui.css` | CSS: variable font, use `font-family: "Cal Sans UI"`. |
-| `cal-sans-ui/font/ui-non-variable.css` | CSS: static UI weights. |
-| `cal-sans-ui/font/text.css` | CSS: use `font-family: "Cal Sans Text"`. |
+| `@calcom/cal-sans-ui` | Next: `CalSansUI`, `CalSansUINonVariable`, `CalSansText` (all in one). |
+| `@calcom/cal-sans-ui/ui` | Next: `CalSansUI` (variable). **Preferred.** |
+| `@calcom/cal-sans-ui/ui-non-variable` | Next: `CalSansUINonVariable` (static UI). |
+| `@calcom/cal-sans-ui/text` | Next: `CalSansText` (static). |
+| `@calcom/cal-sans-ui/ui.css` | CSS: variable font, use `font-family: "Cal Sans UI"`. |
+| `@calcom/cal-sans-ui/ui-non-variable.css` | CSS: static UI weights. |
+| `@calcom/cal-sans-ui/text.css` | CSS: use `font-family: "Cal Sans Text"`. |
 
 ## License
 
