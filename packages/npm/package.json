@@ -1,0 +1,65 @@
+{
+  "name": "@calcom/cal-sans-ui",
+  "version": "1.0.2",
+  "description": "Cal Sans UI and Cal Sans Text typefaces for Cal.com interfaces",
+  "type": "module",
+  "main": "./dist/font.js",
+  "module": "./dist/font.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/font.js",
+      "default": "./dist/font.js"
+    },
+    "./ui": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/sans-ui.js",
+      "default": "./dist/sans-ui.js"
+    },
+    "./ui-non-variable": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/sans-ui-non-variable.js",
+      "default": "./dist/sans-ui-non-variable.js"
+    },
+    "./text": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/sans-text.js",
+      "default": "./dist/sans-text.js"
+    },
+    "./ui.css": "./dist/sans-ui.css",
+    "./ui-non-variable.css": "./dist/sans-ui-non-variable.css",
+    "./text.css": "./dist/sans-text.css"
+  },
+  "files": [
+    "dist",
+    "OFL.txt"
+  ],
+  "scripts": {
+    "prepare": "node scripts/copy-fonts.js"
+  },
+  "peerDependencies": {
+    "next": ">=13.2.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "cal-sans-ui",
+    "cal-sans-text",
+    "calcom",
+    "font",
+    "webfont",
+    "next-font"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calcom/sans-ui",
+    "directory": "packages/npm"
+  },
+  "bugs": "https://github.com/calcom/sans-ui/issues",
+  "homepage": "https://github.com/calcom/sans-ui#readme",
+  "license": "OFL-1.1"
+}

@@ -1,5 +1,6 @@
 **/node_modules/
 *.log
+packages/npm/OFL.txt
 .DS_Store
 .pnp.*
 .yarn/*
